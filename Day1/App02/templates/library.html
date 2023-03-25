@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={% static 'style.css' %} />
+    <title>APP 2 in Django</title>
+  </head>
+  <body>
+    <h1 class="firstChild">{{"Hello World!" | upper}}</h1>
+    <h1>Writers</h1>
+    <ul>
+      {% for author in authors %}
+      <li><a href="/library/{{author}}">{{author}}</a></li>
+      {% endfor %}
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+      consequuntur quo ducimus! Numquam inventore quidem quo at molestias
+      doloremque, placeat reprehenderit quos et voluptas natus consequatur
+      aliquam hic, voluptatem quisquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+      consequuntur quo ducimus! Numquam inventore quidem quo at molestias
+      doloremque, placeat reprehenderit quos et voluptas natus consequatur
+      aliquam hic, voluptatem quisquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+      consequuntur quo ducimus! Numquam inventore quidem quo at molestias
+      doloremque, placeat reprehenderit quos et voluptas natus consequatur
+      aliquam hic, voluptatem quisquam.</p>
+      <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

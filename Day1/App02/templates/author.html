@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={% static 'style2.css' %} />
+    <title>APP 2 in Django</title>
+  </head>
+  <body>
+    <h1 class="firstChild">{{"Hello World!" | upper}}</h1>
+    <h1>{{authorName}}</h1>
+    <ul>
+      <li>Born at :</li>
+      <li>Died at :</li>
+      <li>
+        Books : {% if authorName == "J. K. Rowling" %}
+        <a href="/library/J. K. Rowling/Harry Potter">Harry Potter</a>
+        {% endif %}
+      </li>
+      <li>Bio :</li>
+    </ul>
+  </body>
+</html>
