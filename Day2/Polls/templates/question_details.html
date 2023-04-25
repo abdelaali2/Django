@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block pageTitle %} Q{{question.id}}: {{question.title}}  {% endblock  %}
+{% block content %}
+    <div class="questionArea">
+    <h2 class="questionHeader">{{question.title}}</h2>
+    <p class="questionBody">{{question.question_text}}</p>
+    </div>
+        {% for answer in question.answers.all %}
+            {{ answer.title }}<br/>
+        {% endfor %}
+{% endblock  %}

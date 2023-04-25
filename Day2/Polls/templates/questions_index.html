@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for question in questionsList %}
+        <div class="questionArea">
+        <h2 class="questionHeader">
+            <a href="/question/{{question.id}}">
+                {{question.title}}
+            </a>
+            <br/>
+        </h2>
+        <p class="questionBody">{{question.question_text}}</p>
+        </div>
+    {% endfor %}
+{% endblock  %}

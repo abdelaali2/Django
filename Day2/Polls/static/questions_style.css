@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #123;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(154, 91%, 40%);
+}
+
+h1 {
+  width: 100%;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  margin: 3rem auto;
+  color: hsl(154, 100%, 76%);
+  font-size: 3rem;
+}
+
+.questionArea {
+  width: 90%;
+  margin: 2rem auto;
+  background-color: #abcdef50;
+  color: hsl(154, 91%, 40%);
+  text-align: center;
+}
+
+.questionHeader {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 1rem auto;
+}
+
+.questionBody {
+  color: #fff;
+  font-size: 1.5rem;
+}
